@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/cartfisk
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://cartfisk.com
+  * I am cartfisk (https://keybase.io/cartfisk) on keybase.
+  * I have a public key ASABys44yzSXXe_L3N386Zqz5xmvoWO0OIYPvFwQ6byF5go
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "012001cace38cb34975defcbdcddfce99ab3e719afa163b438860fbc5c10e9bc85e60a",
+            "host": "keybase.io",
+            "kid": "012001cace38cb34975defcbdcddfce99ab3e719afa163b438860fbc5c10e9bc85e60a",
+            "uid": "d94e1da7b910382aeca4b672cdd1a319",
+            "username": "cartfisk"
+        },
+        "service": {
+            "hostname": "cartfisk.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.17"
+    },
+    "ctime": 1473965683,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1473965671,
+        "hash": "8de69a9d6af29a620db6bae142dfa2cdea09ad88eab85747d2478810a39e0ea29f99577910692bfac4c4f1089b06ba647956978107cad8a42f3328a85474341f",
+        "seqno": 638128
+    },
+    "prev": "4c2b085329def8aab72f467e9e53604195c1ae8e684c1cd6328f3c7e545cfb64",
+    "seqno": 13,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgAcrOOMs0l13vy9zd/Omas+cZr6FjtDiGD7xcEOm8heYKp3BheWxvYWTFAvR7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMDFjYWNlMzhjYjM0OTc1ZGVmY2JkY2RkZmNlOTlhYjNlNzE5YWZhMTYzYjQzODg2MGZiYzVjMTBlOWJjODVlNjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMDFjYWNlMzhjYjM0OTc1ZGVmY2JkY2RkZmNlOTlhYjNlNzE5YWZhMTYzYjQzODg2MGZiYzVjMTBlOWJjODVlNjBhIiwidWlkIjoiZDk0ZTFkYTdiOTEwMzgyYWVjYTRiNjcyY2RkMWEzMTkiLCJ1c2VybmFtZSI6ImNhcnRmaXNrIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJjYXJ0Zmlzay5jb20iLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjE3In0sImN0aW1lIjoxNDczOTY1NjgzLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0NzM5NjU2NzEsImhhc2giOiI4ZGU2OWE5ZDZhZjI5YTYyMGRiNmJhZTE0MmRmYTJjZGVhMDlhZDg4ZWFiODU3NDdkMjQ3ODgxMGEzOWUwZWEyOWY5OTU3NzkxMDY5MmJmYWM0YzRmMTA4OWIwNmJhNjQ3OTU2OTc4MTA3Y2FkOGE0MmYzMzI4YTg1NDc0MzQxZiIsInNlcW5vIjo2MzgxMjh9LCJwcmV2IjoiNGMyYjA4NTMyOWRlZjhhYWI3MmY0NjdlOWU1MzYwNDE5NWMxYWU4ZTY4NGMxY2Q2MzI4ZjNjN2U1NDVjZmI2NCIsInNlcW5vIjoxMywidGFnIjoic2lnbmF0dXJlIn2jc2lnxECeAjJhj97NOnwNt6kL0lcB/Iai1AkHCwc04RMO2l4YGY5J44szAVHRBpEoHKfkhijD7wyTkKgg3u5BpaA8oCMAqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgz5MeEg3j6Z4oqhjf3Q/NuouRttSoYUH8M2kK+4HH1dKjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cartfisk
+
+==================================================================
