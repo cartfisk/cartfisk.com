@@ -13,7 +13,8 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-family: --apple-system,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .text-vertical-center {
@@ -27,6 +28,14 @@ body {
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.letter-spacing-6 {
+    letter-spacing: 6px;
 }
 
 /* Custom Button Styles */
