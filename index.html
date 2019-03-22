@@ -30,22 +30,34 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Carter T. Konz</a>
+                <a href="#top" onclick="$('#menu-close').click();">
+                  Carter T. Konz
+                </a>
             </li>
             <li>
-                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+                <a href="#top" onclick="$('#menu-close').click();">
+                  Home
+                </a>
             </li>
             <li>
-                <a href="#about" onclick=$("#menu-close").click();>About</a>
+                <a href="#about" onclick="$('#menu-close').click();">
+                  About
+                </a>
             </li>
             <li>
-                <a href="assets/resume.pdf" onclick=$("#menu-close").click();>Resume</a>
+                <a href="assets/resume.pdf" onclick="$('#menu-close').click();">
+                  Resume
+                </a>
             </li>
             <li>
-                <a href="https://github.com/cartfisk" onclick=$("#menu-close").click();>GitHub</a>
+                <a href="https://github.com/cartfisk" onclick="$('#menu-close').click();">
+                  GitHub
+                </a>
             </li>
             <li>
-                <a href="mailto:carter.konz@gmail.com" onclick=$("#menu-close").click();>Contact</a>
+                <a href="mailto:carter.konz@gmail.com" onclick="$('#menu-close').click();">
+                  Contact
+                </a>
             </li>
         </ul>
     </nav>
@@ -53,11 +65,13 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1 class="uppercase letter-spacing-6">Carter  T.  Konz</h1>
-            <br>
-            <iframe src="https://open.spotify.com/embed/artist/5gGq4ZD0IhBtwRI9zaeLoE" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <br><br><br><br>
-            <a href="mailto:carter.konz@gmail.com" class="btn btn-dark btn-lg">Contact</a>
+            <h1 class="title uppercase letter-spacing-6">Carter  T.  Konz</h1>
+            <div class="spotify-player">
+              <iframe src="https://open.spotify.com/embed/artist/5gGq4ZD0IhBtwRI9zaeLoE" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="contact">
+              <a href="mailto:carter.konz@gmail.com" class="btn btn-lg btn-dark btn-contact">Contact</a>
+            </div>
         </div>
     </header>
 
@@ -74,6 +88,7 @@
         </div>
         <!-- /.container -->
     </section>
+    <hr class="about-hr" />
 
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
@@ -87,13 +102,19 @@
                         <div class="portfolio-item">
                           <ul class="list-inline icon-list">
                               <li>
+                                <span class="apple-music-icon">
                                   <a href="https://itunes.apple.com/us/artist/vlush/1205084532"><i class="fab fa-apple fa-fw fa-10x"></i></a>
+                                </span>
                               </li>
                               <li>
+                                <span class="spotify-icon">
                                   <a href="https://open.spotify.com/artist/5gGq4ZD0IhBtwRI9zaeLoE?si=07qRASMXS5O8lp2CZGMotg"><i class="fab fa-spotify fa-fw fa-10x"></i></a>
+                                </span>
                               </li>
                               <li>
+                                <span class="soundcloud-icon">
                                   <a href="https://soundcloud.com/vlushmusic/"><i class="fab fa-soundcloud fa-fw fa-10x"></i></a>
+                                </span>
                               </li>
                           </ul>
                         </div>
@@ -115,7 +136,7 @@
                 <div class="col-lg-12 text-center">
                     <h3>Questions, whatever, e-mail me.</h3>
                     <a href="mailto:carter.konz@gmail.com" class="btn btn-lg btn-light">Contact</a>
-                    <a href="assets/resume.pdf" class="btn btn-lg btn-dark">Resume</a>
+                    <a href="assets/resume.pdf" class="btn btn-lg btn-dark btn-resume">Resume</a>
                 </div>
             </div>
         </div>
@@ -126,8 +147,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Carter T. Konz</strong>
-                    </h4>
+                    <h4><strong>Carter T. Konz</strong></h4>
                     <p>Chicago, IL</p>
                     <ul class="list-unstyled contact-list">
                         <li><i class="fa fa-phone fa-fw"></i>(612) 208-9062</li>
@@ -135,7 +155,7 @@
                     </ul>
                     <br>
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; cartfisk.com 2018</p>
+                    <p class="text-muted">Copyright &copy; cartfisk.com 2019</p>
                 </div>
             </div>
         </div>
