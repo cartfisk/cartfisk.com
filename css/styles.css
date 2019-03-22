@@ -312,37 +312,38 @@ ul.contact-list li a {
 }
 
 .mountain-container > .mountain {
-  width: 200%;
-  height: 100%;
+  width: 800vh;
+  height: 100vh;
   position: absolute;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: bottom;
   background-attachment: scroll;
+  background-size: auto;
 }
 
 .layer-01 {
-  animation: marquee 42s linear infinite;
-  background-image: url(../img/mountain/01.svg);
+  animation: marquee 40s linear infinite;
+  background-image: url(../img/mountain/4x/01-4x.svg);
 }
 .layer-02 {
-  animation: marquee 36s linear infinite;
-  background-image: url(../img/mountain/02.svg);
+  animation: marquee 35s linear infinite;
+  background-image: url(../img/mountain/4x/02-4x.svg);
 }
 .layer-03 {
   animation: marquee 30s linear infinite;
-  background-image: url(../img/mountain/03.svg);
+  background-image: url(../img/mountain/4x/03-4x.svg);
 }
 .layer-04 {
-  animation: marquee 24s linear infinite;
-  background-image: url(../img/mountain/04.svg);
+  animation: marquee 25s linear infinite;
+  background-image: url(../img/mountain/4x/04-4x.svg);
 }
 .layer-05 {
   animation: marquee 20s linear infinite;
-  background-image: url(../img/mountain/05.svg);
+  background-image: url(../img/mountain/4x/05-4x.svg);
 }
 .layer-06 {
-  animation: marquee 18s linear infinite;
-  background-image: url(../img/mountain/06.svg);
+  animation: marquee 15s linear infinite;
+  background-image: url(../img/mountain/4x/06-4x.svg);
 }
 
 span {
@@ -351,6 +352,6 @@ span {
 }
 
 @keyframes marquee {
-  0% { right: 0; }
-  100% { right: -100%; }
+  0% { right: -400vh; }
+  100% { right: 0; }
 }
