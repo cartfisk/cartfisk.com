@@ -10,36 +10,12 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.text-vertical-center {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    position: inherit;
-    z-index: 10;
-}
-
-.text-vertical-center h1 {
-    font-size: 6.5em;
-    font-weight: 700;
-}
-
 .uppercase {
     text-transform: uppercase;
 }
 
 .letter-spacing-6 {
     letter-spacing: 6px;
-}
-
-.title {
-    margin-bottom: 40px;
-}
-
-.spotify-player {
-}
-
-.contact {
-    margin-top: 40px;
 }
 
 /* Custom Button Styles */
@@ -55,11 +31,15 @@ body {
 }
 
 .btn-dark.btn-resume,
-.btn-dark.btn-contact {
+.btn-light.btn-contact {
   transition: background-color 0.3s ease, color 0.3s ease;
   -webkit-transition: background-color 0.3s ease, color 0.3s ease;
   -moz-transition: background-color 0.3s ease, color 0.3s ease;
   -o-transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-light.btn-contact {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .btn-dark.btn-resume:hover,
@@ -69,9 +49,9 @@ body {
     background-color: rgba(39,105,239,1);
 }
 
-.btn-dark.btn-contact:hover,
-.btn-dark.btn-contact:focus,
-.btn-dark.btn-contact:active {
+.btn-light.btn-contact:hover,
+.btn-light.btn-contact:focus,
+.btn-light.btn-contact:active {
     color: #000;
     background-color: rgba(255,210,58,1);
 }
@@ -195,14 +175,42 @@ hr.small {
 /* Header */
 
 .header {
-    display: table;
+    display: grid;
+    grid-gap: 15px;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
     position: relative;
+}
+
+.header-content {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    overflow: scroll;
     width: 100%;
     height: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    z-index: 10;
+}
+
+.header-content h1 {
+    font-size: 6.5vw;
+    font-weight: 700;
+}
+
+.title {
+    margin-bottom: 40px;
+}
+
+.spotify-player {
+
+}
+
+.contact {
+    margin-top: 40px;
 }
 
 /* About */
@@ -296,6 +304,7 @@ ul.contact-list li a {
 .mountain-container {
   width: 100%;
   height: 100%;
+  position: absolute;
   background-color: #f2f2f2;
   z-index: 0;
 }
@@ -306,6 +315,7 @@ ul.contact-list li a {
   position: absolute;
   background-repeat: no-repeat;
   background-position: bottom;
+  background-attachment: scroll;
 }
 
 .layer-01 {
@@ -341,47 +351,4 @@ span {
 @keyframes marquee {
   0% { right: 0; }
   100% { right: -100%; }
-}
-
-* {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-}
-
-* {
-	 box-sizing: border-box;
-	 -webkit-tap-highlight-color: transparent;
-}
-.animated-text {
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-	 width: 100%;
-	 height: 100%;
-	 margin: 0;
-	 background: linear-gradient(to bottom right, #ff813d, #ff1500);
-	 text-rendering: optimizeLegibility;
-	 overflow: hidden;
-}
-header-title {
-	 animation: layerize cubic-bezier(0.4, 0, 0.2, 1) 1200ms 200ms infinite alternate;
-	 opacity: 0;
-	 width: 100%;
-	 color: #fff;
-	 font: italic 500 60vmin "Roboto", sans-serif;
-	 cursor: default;
-	 user-select: none;
-	 text-align: center;
-}
- @keyframes layerize {
-	 0% {
-		 opacity: 0;
-		 transform: translate(0, 0);
-		 text-shadow: 0 0 transparent0em 0em rgba(255, 255, 255, 0.4)0em 0em rgba(255, 255, 255, 0.3)0em 0em rgba(255, 255, 255, 0.2)0em 0em rgba(255, 255, 255, 0.1);
-	}
-	 100% {
-		 opacity: 1;
-		 transform: translate(-0.066666em, -0.066666em);
-		 text-shadow: 0 0 transparent0.033333em 0.033333em rgba(255, 255, 255, 0.4)0.066666em 0.066666em rgba(255, 255, 255, 0.3)0.099999em 0.099999em rgba(255, 255, 255, 0.2)0.133332em 0.133332em rgba(255, 255, 255, 0.1);
-	}
 }
