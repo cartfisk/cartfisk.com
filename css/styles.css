@@ -14,6 +14,8 @@ body {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    position: inherit;
+    z-index: 10;
 }
 
 .text-vertical-center h1 {
@@ -197,7 +199,6 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -289,4 +290,98 @@ ul.contact-list li a {
     position: fixed;
     bottom: 5px;
     right: 5px;
+}
+
+/* Background Marquee */
+.mountain-container {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  z-index: 0;
+}
+
+.mountain-container > .mountain {
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.layer-01 {
+  animation: marquee 42s linear infinite;
+  background-image: url(../img/mountain/01.svg);
+}
+.layer-02 {
+  animation: marquee 36s linear infinite;
+  background-image: url(../img/mountain/02.svg);
+}
+.layer-03 {
+  animation: marquee 30s linear infinite;
+  background-image: url(../img/mountain/03.svg);
+}
+.layer-04 {
+  animation: marquee 24s linear infinite;
+  background-image: url(../img/mountain/04.svg);
+}
+.layer-05 {
+  animation: marquee 20s linear infinite;
+  background-image: url(../img/mountain/05.svg);
+}
+.layer-06 {
+  animation: marquee 18s linear infinite;
+  background-image: url(../img/mountain/06.svg);
+}
+
+span {
+  float: left;
+  width: 50%:
+}
+
+@keyframes marquee {
+  0% { right: 0; }
+  100% { right: -100%; }
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+	 box-sizing: border-box;
+	 -webkit-tap-highlight-color: transparent;
+}
+.animated-text {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 width: 100%;
+	 height: 100%;
+	 margin: 0;
+	 background: linear-gradient(to bottom right, #ff813d, #ff1500);
+	 text-rendering: optimizeLegibility;
+	 overflow: hidden;
+}
+header-title {
+	 animation: layerize cubic-bezier(0.4, 0, 0.2, 1) 1200ms 200ms infinite alternate;
+	 opacity: 0;
+	 width: 100%;
+	 color: #fff;
+	 font: italic 500 60vmin "Roboto", sans-serif;
+	 cursor: default;
+	 user-select: none;
+	 text-align: center;
+}
+ @keyframes layerize {
+	 0% {
+		 opacity: 0;
+		 transform: translate(0, 0);
+		 text-shadow: 0 0 transparent0em 0em rgba(255, 255, 255, 0.4)0em 0em rgba(255, 255, 255, 0.3)0em 0em rgba(255, 255, 255, 0.2)0em 0em rgba(255, 255, 255, 0.1);
+	}
+	 100% {
+		 opacity: 1;
+		 transform: translate(-0.066666em, -0.066666em);
+		 text-shadow: 0 0 transparent0.033333em 0.033333em rgba(255, 255, 255, 0.4)0.066666em 0.066666em rgba(255, 255, 255, 0.3)0.099999em 0.099999em rgba(255, 255, 255, 0.2)0.133332em 0.133332em rgba(255, 255, 255, 0.1);
+	}
 }
