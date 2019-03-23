@@ -12,13 +12,44 @@
     <title>Carter T. Konz</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA"
+        crossorigin="anonymous"
+    >
 
     <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet">
+    <link
+        href="css/styles.css"
+        rel="stylesheet"
+    >
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css"
+        integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm"
+        crossorigin="anonymous"
+    >
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.1/css/regular.css"
+        integrity="sha384-FKw7x8fCxuvzBwOJmhTJJsKzBl8dnN9e2R4+pXRfYoHivikuHkzWyhKWDSMcGNK8"
+        crossorigin="anonymous"
+    >
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css"
+        integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv"
+        crossorigin="anonymous"
+    >
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
+        integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq"
+        crossorigin="anonymous"
+    >
 
 </head>
 
@@ -104,24 +135,24 @@
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
+                <div class="col-lg-10 offset-lg-1 text-center">
                     <h2>Music</h2>
                     <hr class="small">
                     <div class="row">
                       <div class="col-md-12">
                         <div class="portfolio-item">
                           <ul class="list-inline icon-list">
-                              <li>
+                              <li class="list-inline-item">
                                 <span class="apple-music-icon">
                                   <a href="https://itunes.apple.com/us/artist/vlush/1205084532"><i class="fab fa-apple fa-fw fa-10x"></i></a>
                                 </span>
                               </li>
-                              <li>
+                              <li class="list-inline-item">
                                 <span class="spotify-icon">
                                   <a href="https://open.spotify.com/artist/5gGq4ZD0IhBtwRI9zaeLoE?si=07qRASMXS5O8lp2CZGMotg"><i class="fab fa-spotify fa-fw fa-10x"></i></a>
                                 </span>
                               </li>
-                              <li>
+                              <li class="list-inline-item">
                                 <span class="soundcloud-icon">
                                   <a href="https://soundcloud.com/vlushmusic/"><i class="fab fa-soundcloud fa-fw fa-10x"></i></a>
                                 </span>
@@ -140,7 +171,7 @@
     </section>
 
     <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
+    <aside class="call-to-action">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -156,12 +187,20 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
+                <div class="col-lg-10 offset-lg-1 text-center">
                     <h4><strong>Carter T. Konz</strong></h4>
                     <p>Chicago, IL</p>
                     <ul class="list-unstyled contact-list">
-                        <li><i class="fa fa-phone fa-fw"></i>(612) 208-9062</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">carter.konz@gmail.com</a></li>
+                        <li>
+                          <i class="fas fa-phone fa-fw"></i>
+                          <a href="tel:1-612-208-9062">
+                            (612) 208-9062
+                          </a>
+                        </li>
+                        <li>
+                          <i class="fas fa-envelope fa-fw"></i>
+                          <a href="mailto:name@example.com">carter.konz@gmail.com</a>
+                        </li>
                     </ul>
                     <br>
                     <hr class="small">
@@ -173,63 +212,69 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"
+    >
+    </script>
 
     <!-- Custom Theme JavaScript -->
     <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    //#to-top button appears after scrolling
-    var fixed = false;
-    $(document).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-            if (!fixed) {
-                fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
-                $('#to-top').show("slow", function() {
-                    $('#to-top').css({
-                        position: 'fixed',
-                        display: 'block'
-                    });
-                });
-            }
-        } else {
-            if (fixed) {
-                fixed = false;
-                $('#to-top').hide("slow", function() {
-                    $('#to-top').css({
-                        display: 'none'
-                    });
-                });
-            }
-        }
-    });
+      // Closes the sidebar menu
+      $("#menu-close").click(function(e) {
+          e.preventDefault();
+          $("#sidebar-wrapper").toggleClass("active");
+      });
+      // Opens the sidebar menu
+      $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#sidebar-wrapper").toggleClass("active");
+      });
+      // Scrolls to the selected menu item on the page
+      $(function() {
+          $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+              if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                  if (target.length) {
+                      $('html,body').animate({
+                          scrollTop: target.offset().top
+                      }, 1000);
+                      return false;
+                  }
+              }
+          });
+      });
+      //#to-top button appears after scrolling
+      var fixed = false;
+      $(document).scroll(function() {
+          if ($(this).scrollTop() > 250) {
+              if (!fixed) {
+                  fixed = true;
+                  // $('#to-top').css({position:'fixed', display:'block'});
+                  $('#to-top').show("slow", function() {
+                      $('#to-top').css({
+                          position: 'fixed',
+                          display: 'block'
+                      });
+                  });
+              }
+          } else {
+              if (fixed) {
+                  fixed = false;
+                  $('#to-top').hide("slow", function() {
+                      $('#to-top').css({
+                          display: 'none'
+                      });
+                  });
+              }
+          }
+      });
     </script>
 
 </body>
