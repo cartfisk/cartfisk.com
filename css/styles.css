@@ -11,6 +11,12 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    line-height: unset;
+    margin: unset;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -24,6 +30,7 @@ body {
 .btn {
   border: none;
   border-radius: 3px;
+  font-weight: bold;
 }
 
 .btn-dark {
@@ -204,7 +211,7 @@ hr.small {
 }
 
 .header-content h1 {
-    font-size: 6.5vw;
+    font-size: 10vw;
     font-weight: 700;
 }
 
