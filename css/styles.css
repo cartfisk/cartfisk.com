@@ -1,31 +1,17 @@
-/* Global Styles */
-
-html,
-body {
-    width: 100%;
-    height: 100%;
-}
-
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* ------------------- */
+/* bootstrap overrides */
+/* ------------------- */
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     line-height: unset;
     margin: unset;
 }
 
-.uppercase {
-    text-transform: uppercase;
-}
-
-.letter-spacing-6 {
-    letter-spacing: 6px;
-}
-
-/* Custom Button Styles */
-
+/* buttons */
 .btn {
   border: none;
   border-radius: 3px;
@@ -74,7 +60,6 @@ body {
     background-color: rgba(0,0,0,0.7);
 }
 
-
 .btn-light {
     transition: background-color 0.15s ease;
     -webkit-transition: background-color 0.15s ease;
@@ -91,14 +76,16 @@ body {
     background-color: rgba(255,255,255,0.8);
 }
 
-/* Custom Horizontal Rule */
-
+/* horizontal rule */
 hr.small {
     max-width: 100px;
 }
 
-/* Side Menu */
+/* ------------ */
+/* main styling */
+/* ------------ */
 
+/* nav menu */
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -186,8 +173,7 @@ hr.small {
     margin: 5px 5px 0 0;
 }
 
-/* Header */
-
+/* header */
 .header {
     display: grid;
     grid-gap: 15px;
@@ -218,16 +204,11 @@ hr.small {
     margin-bottom: 40px;
 }
 
-.spotify-player {
-
-}
-
 .contact {
     margin-top: 40px;
 }
 
-/* About */
-
+/* about */
 .about {
     padding: 50px 0;
 }
@@ -237,8 +218,7 @@ hr.about-hr {
   width: 80%;
 }
 
-/* Portfolio */
-
+/* portfolio */
 .portfolio {
     padding: 50px 0;
 }
@@ -263,8 +243,7 @@ hr.about-hr {
     opacity: 0.8;
 }
 
-/* Call to Action */
-
+/* cta */
 .call-to-action {
     color: #fff;
     background-color: #434343;
@@ -275,8 +254,7 @@ hr.about-hr {
     margin: 10px;
 }
 
-/* Footer */
-
+/* footer */
 footer {
     padding: 100px 0;
 }
@@ -310,7 +288,9 @@ ul.contact-list li a {
     right: 5px;
 }
 
-/* Background Marquee */
+/* ------------------ */
+/* mountain animation */
+/* ------------------ */
 .mountain-container {
   width: 100%;
   height: 100%;
